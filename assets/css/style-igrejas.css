@@ -63,10 +63,16 @@ a {
 .contentContato{
     display: flex;
 }
-.pix{
+.pix>a{
   color: #664b4d;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.1em;
+}
+.pix{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 ul {

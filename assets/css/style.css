@@ -1,27 +1,41 @@
 @import url(./style-igrejas.css);
-main{
+
+main {
     background-color: #efddc9;
     width: 95%;
     margin: 50px auto;
     border-radius: 20px;
     text-align: center;
-    -webkit-box-shadow: -2px 6px 29px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 6px 29px -1px rgba(0,0,0,0.75);
-    box-shadow: -2px 6px 29px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 6px 29px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 6px 29px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 6px 29px -1px rgba(0, 0, 0, 0.75);
 }
 
-
-#conteudo,aside{
-width: 45%;
-margin: 50px auto;
-border: red solid 2px;
-height: 450px;
+#conteudo,
+aside {
+    width: 45%;
+    margin: 50px auto;
+    height: auto    ;
 }
-main>section{
+
+main>section {
     display: flex;
     justify-content: space-between;
 
+
 }
+
+#conteudo>p,
+h3 {
+    margin-top: 30px;
+}
+
+aside>iframe {
+    width: 100%;
+    height: 80%;
+}
+
+
 /*-- CARD DO MODAL ATIVAR APENAS EM ENVENTOS--------------------------------------------------------*/
 /*
 #cardAvisos{
@@ -48,11 +62,26 @@ main>section{
 */
 /*-- FINAL CARD DO MODAL --------------------------------------------------------------------------*/
 
-@media screen and (max-width:580px) {
+@media screen and (max-width:900px) {
     section {
         flex-direction: column;
     }
-    #conteudo,aside{
+
+    #conteudo,
+    aside {
         width: 95%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        height: auto;
+    }
+
+    aside>iframe {
+        min-height: 500px
+        ;
+        margin-top: 20px;
+    }
+
+    #conteudo {
+        margin-top: 0px;
     }
 }
