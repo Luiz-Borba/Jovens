@@ -47,3 +47,12 @@ main>section{
 
 */
 /*-- FINAL CARD DO MODAL --------------------------------------------------------------------------*/
+
+@media screen and (max-width:580px) {
+    section {
+        flex-direction: column;
+    }
+    #conteudo,aside{
+        width: 95%;
+    }
+}
