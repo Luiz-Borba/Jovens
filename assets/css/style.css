@@ -17,6 +17,11 @@ aside {
     margin: 50px auto;
     height: auto    ;
 }
+aside>img{
+    width: 100%;
+    min-height: 350px;
+    border-radius: 20px;
+}
 
 main>section {
     display: flex;
