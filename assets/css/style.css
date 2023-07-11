@@ -10,7 +10,9 @@ main {
     -moz-box-shadow: -2px 6px 29px -1px rgba(0, 0, 0, 0.75);
     box-shadow: -2px 6px 29px -1px rgba(0, 0, 0, 0.75);
 }
-
+p{
+    font-size: 1.2em;
+}
 #conteudo,
 aside {
     width: 45%;
