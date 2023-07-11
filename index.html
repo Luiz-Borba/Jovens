@@ -5,6 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UmadFlor</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      /*-- INICIO CARD DO MODAL ATIVAR APENAS EM ENVENTOS--------------------------------------------------------*/
+
+#cardAvisos{
+    width: 70%;
+    height: auto;
+    background-color: rgb(225, 223, 223);
+    position: absolute;
+    margin:20px auto;
+    margin-left: 15%;
+    z-index: 99;
+    border-radius: 20px;
+    box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.enviar{
+    height: 50px;
+    margin: 20px auto;
+    background-color: rgb(32, 196, 32);
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    color: rgb(49, 21, 21);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.enviar:hover{
+    height: 55px;
+    width: 90%;
+    background-color: red;
+    color: wheat;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#fundo,#fundoMain{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+form{
+    display: flex;
+    width: 80%;
+    margin:20px auto;
+    flex-direction: column;
+}
+input{
+    height: 30px;
+}
+#cardAvisos>button{
+    margin-left: 95%;
+    font-size: 2em;
+    background: transparent;
+    margin-top: 20px;
+    border: none;
+}
+@media screen and (max-width:900px){
+  /*-- INICIO CARD DO MODAL ATIVAR APENAS EM ENVENTOS--------------------------------------------------------*/
+  #cardAvisos{
+        width: 100%;
+        height: auto;
+        background-color: rgb(225, 223, 223);
+        position: absolute;
+        margin:20px auto;
+        z-index: 99;
+        border-radius: 20px;
+        box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    #cardAvisos>button{
+        margin-left: 90%;
+        font-size: 1.5em;
+        background: transparent;
+        margin-top: 20px;
+        border: none;
+    }
+/*-- FINAL CARD DO MODAL --------------------------------------------------------------------------*/
+    
+}
+
+
+/*-- FINAL CARD DO MODAL --------------------------------------------------------------------------*/
+    </style>
 
     <!-- Scripit do modal --------------------------------------------------------------------------------->
 
