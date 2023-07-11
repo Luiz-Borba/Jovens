@@ -6,90 +6,90 @@
     <title>UmadFlor</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <style>
-/*-- INICIO CARD DO MODAL ATIVAR APENAS EM ENVENTOS--------------------------------------------------------*/
+      /*-- INICIO CARD DO MODAL ATIVAR APENAS EM ENVENTOS--------------------------------------------------------*/
 
-#cardAvisos{
-    width: 70%;
-    height: auto;
-   background-color: black;
-   color: white;
-    position: absolute;
-    margin:20px auto;
-    margin-left: 15%;
-    z-index: 99;
-    border-radius: 20px;
-    box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
-}
-label{
-  margin: 10px;
-}
-.enviar{
-    height: 50px;
-    margin: 20px auto;
-    background-color: rgb(32, 196, 32);
-    width: 80%;
-    border-radius: 20px;
-    border: none;
-    box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    color: rgb(49, 21, 21);
-    font-weight: bold;
-    font-size: 1.2em;
-}
-.enviar:hover{
-    height: 55px;
-    width: 90%;
-    background-color: red;
-    color: wheat;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-#fundo,#fundoMain{
-    background-color: rgba(0, 0, 0, 0.6);
-}
-form{
-    display: flex;
-    width: 80%;
-    margin:20px auto;
-    flex-direction: column;
-}
-input{
-    height: 40px;
-    border-radius: 15px;
-    border: none;
-}
-#cardAvisos>button{
-    margin-left: 95%;
-    font-size: 2em;
-    background: transparent;
-    margin-top: 20px;
-    border: none;
-}
-@media screen and (max-width:900px){
-  /*-- INICIO CARD DO MODAL ATIVAR APENAS EM ENVENTOS--------------------------------------------------------*/
-  #cardAvisos{
-        width: 100%;
+      #cardAvisos {
+        width: 70%;
         height: auto;
+        background-color: black;
+        color: white;
         position: absolute;
-        margin:20px auto;
+        margin: 20px auto;
+        margin-left: 15%;
         z-index: 99;
         border-radius: 20px;
         box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
-        text-align: center;
-    }
-    #cardAvisos>button{
-        margin-left: 90%;
+      }
+      label {
+        margin: 10px;
+      }
+      .enviar {
+        height: 50px;
+        margin: 20px auto;
+        background-color: rgb(32, 196, 32);
+        width: 80%;
+        border-radius: 20px;
+        border: none;
+        box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        color: rgb(49, 21, 21);
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      .enviar:hover {
+        height: 55px;
+        width: 90%;
+        background-color: red;
+        color: wheat;
+        font-weight: bold;
         font-size: 1.5em;
+      }
+      #fundo,
+      #fundoMain {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      form {
+        display: flex;
+        width: 80%;
+        margin: 20px auto;
+        flex-direction: column;
+      }
+      input {
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+      }
+
+      #cardAvisos > button {
+        margin-left: 95%;
+        font-size: 2em;
         background: transparent;
         margin-top: 20px;
         border: none;
-    }
-  
-/*-- FINAL CARD DO MODAL --------------------------------------------------------------------------*/
-    
-}
+      }
+      @media screen and (max-width: 900px) {
+        /*-- INICIO CARD DO MODAL ATIVAR APENAS EM ENVENTOS--------------------------------------------------------*/
+        #cardAvisos {
+          width: 100%;
+          height: auto;
+          position: absolute;
+          margin: 20px auto;
+          z-index: 99;
+          border-radius: 20px;
+          box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+          text-align: center;
+        }
+        #cardAvisos > button {
+          margin-left: 90%;
+          font-size: 1.5em;
+          background: transparent;
+          margin-top: 20px;
+          border: none;
+        }
 
+        /*-- FINAL CARD DO MODAL --------------------------------------------------------------------------*/
+      }
 
-/*-- FINAL CARD DO MODAL --------------------------------------------------------------------------*/
+      /*-- FINAL CARD DO MODAL --------------------------------------------------------------------------*/
     </style>
 
     <!-- Scripit do modal --------------------------------------------------------------------------------->
@@ -103,45 +103,118 @@ input{
         fundoMain.style.backgroundColor = " rgba(0, 0, 0, 0.0)";
         botao.style.display = "none";
       };
-
     </script>
     <!-- Scripit do modal --------------------------------------------------------------------------------->
   </head>
   <body>
     <!-- modal --------------------------------------------------------------------------------->
     <div id="cardAvisos">
-      <button id="fechar" onclick="fechar()" style="cursor: pointer;color: white;">X</button>
-      <h1 style="text-align: center; color: white;">ATENÇÃO ! ! ! <br> NÃO COMPARTILHAR O SITE, O FOCO ATUAL É APENAS PARA CAPTURA DE DADOS E É VOLTADO APENAS AOS LIDERES DE JOVENS </h1>
+      <button
+        id="fechar"
+        onclick="fechar()"
+        style="cursor: pointer; color: white"
+      >
+        X
+      </button>
+      <h1 style="text-align: center; color: white">
+        ! ! ! ATENÇÃO ! ! ! <br />
+        NÃO COMPARTILHAR O SITE, O FOCO ATUAL É APENAS PARA CAPTURA DE DADOS E É
+        VOLTADO APENAS AOS LIDERES DE JOVENS
+      </h1>
       <div>
         <form action="https://formspree.io/f/mrgwgyzn" method="post">
           <!-- Replace with accesKey sent to your email -->
           <label for="Nome"><strong>Digite seu Nome</strong></label>
-          <input type="text" name="Nome" id="Nome" placeholder="Digite seu Nome" required /> <!-- Opcional -->
-        
-          <label for="telefone"style="text-align:center;"><strong style="color:red; font-size: 1.2em;"><br>! !  ATENÇÃO ! !<br> ATRAVÉS DESTE NUMERO OS VISITANTES ENTRARÃO EM CONTATO PARA TIARAR EVENTUAIS DUVIDAS  <br></strong> Digite seu WhatsApp </label>
-          <input type="text" name="telefone" id="telefone" placeholder="Digite seu WhatsApp " required /> <!-- Opcional -->
-        
+          <input
+            type="text"
+            name="Nome"
+            id="Nome"
+            placeholder="Digite seu Nome"
+            required
+          />
+          <!-- Opcional -->
+
+          <label for="telefone" style="text-align: center"
+            ><strong style="color: red; font-size: 1.2em"
+              ><br />! ! ATENÇÃO ! !<br />
+              ATRAVÉS DESTE NUMERO OS VISITANTES ENTRARÃO EM CONTATO PARA TIARAR
+              EVENTUAIS DUVIDAS <br
+            /></strong>
+            Digite seu WhatsApp
+          </label>
+          <input
+            type="text"
+            name="telefone"
+            id="telefone"
+            placeholder="Digite seu WhatsApp "
+            required
+          />
+          <!-- Opcional -->
+
           <label for="pix">Digite o pix para ofertas</label>
-          <input type="text" name="pix" id="pix" placeholder="Digite o pix para oferta voltada aos joves EX: umadflor.canas@gmail.com" required /> <!-- Opcional -->
-        
+          <input
+            type="text"
+            name="pix"
+            id="pix"
+            placeholder="Digite o pix para oferta voltada aos joves EX: umadflor.canas@gmail.com"
+            required
+          />
+          <!-- Opcional -->
+
           <label for="facebook">Facebook da sua congregação</label>
-          <input type="text" name="facebook" placeholder="Digite o facebook da sua congregação" required /> <!-- Opcional -->
-                  
+          <input
+            type="text"
+            name="facebook"
+            placeholder="Digite o facebook da sua congregação"
+            required
+          />
+          <!-- Opcional -->
+
           <label for="endereco">Endereço da sua congregação</label>
-          <input type="text" name="endereco" placeholder="Digite o endereço da sua congregação" required /> <!-- Opcional -->
-        
+          <input
+            type="text"
+            name="endereco"
+            placeholder="Digite o endereço da sua congregação"
+            required
+          />
+          <!-- Opcional -->
+
           <label for="ebd">Digite os Horários da EBD</label>
-          <textarea name="ebd" id="ebd" cols="40" rows="5" placeholder="Digite os dias e horários da EBD EX: Domingo: 9:30 às 11:00" required></textarea>
-        
+          <textarea
+            name="ebd"
+            id="ebd"
+            cols="40"
+            rows="5"
+            placeholder="Digite os dias e horários da EBD EX: Domingo: 9:30 às 11:00"
+            required
+          ></textarea>
+
           <label for="cultos">Digite os Horários dos cultos</label>
-          <textarea name="cultos" id="cultos" cols="40" rows="5" placeholder="Digite os dias e horários dos cultos EX: Domingo: 9:30 às 11:00" required></textarea>
+          <textarea
+            name="cultos"
+            id="cultos"
+            cols="40"
+            rows="5"
+            placeholder="Digite os dias e horários dos cultos EX: Domingo: 9:30 às 11:00"
+            required
+          ></textarea>
 
-          <label for="">Caso queria enviar fotos para alterar as imagens da sua congregação <a target="_blank" href="https://wa.me/5548996109220?text=Ol%C3%A1+Luiz%2C+Tudo+bem+%3F+Gostaria+de+fazer+o+envio+das+fotos+da+minha+congrega%C3%A7%C3%A3o" style="font-size: 1.5em; font-weight: bold;">Clique Aqui</a> e envie o nome da congregação cjunto as imagens, as imagens deve ser 1X1 (Quadradas) e devem ser no maximo 5 imagens!</label>
-        
-          <input type="hidden" name="redirectTo" value="home.html" /> <!-- Opcional -->
+          <label for=""
+            >Caso queria enviar fotos para alterar as imagens da sua congregação
+            <a
+              target="_blank"
+              href="https://wa.me/5548996109220?text=Ol%C3%A1+Luiz%2C+Tudo+bem+%3F+Gostaria+de+fazer+o+envio+das+fotos+da+minha+congrega%C3%A7%C3%A3o"
+              style="font-size: 1.5em; font-weight: bold"
+              >Clique Aqui</a
+            >
+            e envie o nome da congregação cjunto as imagens deseja trocar, as imagens deve ser
+            1X1 (Quadradas) e devem ser no maximo 5 imagens!</label
+          >
+
+          <input type="hidden" name="redirectTo" value="home.html" />
+          <!-- Opcional -->
           <input type="submit" value="Enviar" class="enviar" />
-      </form>
-
+        </form>
       </div>
     </div>
     <div id="fundo">
