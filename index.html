@@ -11,13 +11,17 @@
 #cardAvisos{
     width: 70%;
     height: auto;
-    background-color: rgb(225, 223, 223);
+   background-color: black;
+   color: white;
     position: absolute;
     margin:20px auto;
     margin-left: 15%;
     z-index: 99;
     border-radius: 20px;
     box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+label{
+  margin: 10px;
 }
 .enviar{
     height: 50px;
@@ -49,7 +53,9 @@ form{
     flex-direction: column;
 }
 input{
-    height: 30px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
 }
 #cardAvisos>button{
     margin-left: 95%;
@@ -63,12 +69,12 @@ input{
   #cardAvisos{
         width: 100%;
         height: auto;
-        background-color: rgb(225, 223, 223);
         position: absolute;
         margin:20px auto;
         z-index: 99;
         border-radius: 20px;
         box-shadow: -2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        text-align: center;
     }
     #cardAvisos>button{
         margin-left: 90%;
@@ -104,15 +110,15 @@ input{
   <body>
     <!-- modal --------------------------------------------------------------------------------->
     <div id="cardAvisos">
-      <button id="fechar" onclick="fechar()" style="cursor: pointer;">X</button>
-      <h1 style="text-align: center;">ATENÇÃO ! ! ! <br> NÃO COMPARTILHAR O SITE, O FOCO ATUAL É APENAS PARA CAPTURA DE DADOS E É VOLTADO APENAS AOS LIDERES DE JOVENS </h1>
+      <button id="fechar" onclick="fechar()" style="cursor: pointer;color: white;">X</button>
+      <h1 style="text-align: center; color: white;">ATENÇÃO ! ! ! <br> NÃO COMPARTILHAR O SITE, O FOCO ATUAL É APENAS PARA CAPTURA DE DADOS E É VOLTADO APENAS AOS LIDERES DE JOVENS </h1>
       <div>
         <form action="https://formspree.io/f/mrgwgyzn" method="post">
           <!-- Replace with accesKey sent to your email -->
           <label for="Nome"><strong>Digite seu Nome</strong></label>
           <input type="text" name="Nome" id="Nome" placeholder="Digite seu Nome" required /> <!-- Opcional -->
         
-          <label for="telefone">Digite seu WhatsApp <strong style="color:red; font-size: 1.2em;"><br>! ! ! ATENÇÃO ATRAVÉS DESTE NUMERO OS VISITANTES ENTRARÃO EM CONTATO PARA TIARAR EVENTUAIS DUVIDAS ! ! !</strong></label>
+          <label for="telefone"><strong style="color:red; font-size: 1.2em;"><br>! !  ATENÇÃO ATRAVÉS DESTE NUMERO OS VISITANTES ENTRARÃO EM CONTATO PARA TIARAR EVENTUAIS DUVIDAS ! ! <br></strong> Digite seu WhatsApp </label>
           <input type="text" name="telefone" id="telefone" placeholder="Digite seu WhatsApp " required /> <!-- Opcional -->
         
           <label for="pix">Digite o pix para ofertas</label>
