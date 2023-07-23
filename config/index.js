@@ -55,3 +55,32 @@ function toggleMenu(event) {
     }
 }
 // Botão mobile
+
+// COPIAR TEXTO INICIO ------------------------------------------------------------------------------
+
+function copiarTexto() {
+  
+  var elemento = document.getElementById("pix");
+  
+  var textoTemporario = document.createElement("textarea");
+  
+  textoTemporario.value = elemento.textContent;
+  
+  document.body.appendChild(textoTemporario);
+  
+  textoTemporario.select();
+  
+  document.execCommand("copy");
+  
+  document.body.removeChild(textoTemporario);
+  
+  var mensagemDiv = document.getElementById("mensagem");
+  mensagemDiv.textContent = "PIX Copiado!";
+  
+  setTimeout(function() {
+      mensagemDiv.textContent = "";
+  }, 3000); 
+}
+
+
+// COPIAR TEXTO FINAL -*----------------------------------------------------------------------------------
